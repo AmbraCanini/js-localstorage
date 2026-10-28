@@ -26,12 +26,19 @@
 
 // Capitolo 6 JSON.stringify
 
-const prodotto = {
-    nome: "Mouse",
-    prezzo: 20
-};
+//const prodotto = {
+//    nome: "Mouse",
+//   prezzo: 20
+//};
 
-const prodottoJSON = JSON.stringify(prodotto);
-console.log(prodottoJSON);
+//const prodottoJSON = JSON.stringify(prodotto);
+//console.log(prodottoJSON);
 
 
+// Capitolo 7 JSON.parse
+
+
+const prodottoJSON = '{"nome":"Tastiera","prezzo":49}';
+
+const prodotto = JSON.parse(prodottoJSON);
+console.log(prodotto.prezzo);
