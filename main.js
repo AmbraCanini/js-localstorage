@@ -12,9 +12,14 @@
 
 // Capitolo 4 removeItem
 
-localStorage.setItem("lingua", "it");
-localStorage.setItem("volume", "80");
-localStorage.setItem("notifiche", "disattivate");
-localStorage.removeItem("volume");
+//localStorage.setItem("lingua", "it");
+//localStorage.setItem("volume", "80");
+//localStorage.removeItem("volume");
+//localStorage.setItem("notifiche", "disattivate");
 
 
+// Capitolo 5 clear
+
+localStorage.setItem("colore", "viola")
+localStorage.setItem("nome utente", "Lisa")
+localStorage.clear();
