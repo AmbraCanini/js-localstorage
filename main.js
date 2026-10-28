@@ -20,6 +20,18 @@
 
 // Capitolo 5 clear
 
-localStorage.setItem("colore", "viola")
-localStorage.setItem("nome utente", "Lisa")
-localStorage.clear();
+//localStorage.setItem("colore", "viola")
+//localStorage.setItem("nome utente", "Lisa")
+//localStorage.clear();
+
+// Capitolo 6 JSON.stringify
+
+const prodotto = {
+    nome: "Mouse",
+    prezzo: 20
+};
+
+const prodottoJSON = JSON.stringify(prodotto);
+console.log(prodottoJSON);
+
+
