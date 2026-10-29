@@ -46,10 +46,31 @@
 
 // Capitolo 8 Oggetti e array nel localStorage
 
-const prodotto = {
-    nome: "libro",
-    quantità: 2
+//const prodotto = {
+//   nome: "libro",
+//   quantità: 2
 
+//};
+
+//const categorie = ["gialli", "romanzi", "thriller"];
+
+//localStorage.setItem("prodotto", JSON.stringify(prodotto));
+//localStorage.setItem("categorie", JSON.stringify(categorie));
+
+//const prodottoTop = JSON.parse(localStorage.getItem("prodotto"))
+//const categorieTop = JSON.parse(localStorage.getItem("categorie"))
+
+//console.log(prodottoTop);
+//console.log(categorieTop);
+
+// ultimo esercizio
+
+localStorage.setItem("lingua", "IT")
+
+const prodotto = {
+
+    nome: "libro",
+    prezzo: 20
 };
 
 const categorie = ["gialli", "romanzi", "thriller"];
@@ -59,6 +80,10 @@ localStorage.setItem("categorie", JSON.stringify(categorie));
 
 const prodottoTop = JSON.parse(localStorage.getItem("prodotto"))
 const categorieTop = JSON.parse(localStorage.getItem("categorie"))
+const linguaTop = localStorage.getItem("lingua")
 
+console.log(linguaTop);
 console.log(prodottoTop);
 console.log(categorieTop);
+
+localStorage.removeItem("lingua")
