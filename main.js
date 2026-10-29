@@ -38,7 +38,27 @@
 // Capitolo 7 JSON.parse
 
 
-const prodottoJSON = '{"nome":"Tastiera","prezzo":49}';
+//const prodottoJSON = '{"nome":"Tastiera","prezzo":49}';
 
-const prodotto = JSON.parse(prodottoJSON);
-console.log(prodotto.prezzo);
+//const prodotto = JSON.parse(prodottoJSON);
+//console.log(prodotto.prezzo);
+
+
+// Capitolo 8 Oggetti e array nel localStorage
+
+const prodotto = {
+    nome: "libro",
+    quantità: 2
+
+};
+
+const categorie = ["gialli", "romanzi", "thriller"];
+
+localStorage.setItem("prodotto", JSON.stringify(prodotto));
+localStorage.setItem("categorie", JSON.stringify(categorie));
+
+const prodottoTop = JSON.parse(localStorage.getItem("prodotto"))
+const categorieTop = JSON.parse(localStorage.getItem("categorie"))
+
+console.log(prodottoTop);
+console.log(categorieTop);
